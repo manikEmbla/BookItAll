@@ -1,0 +1,5 @@
+[
+    {"id":"1", "name":"Marina Manderin Singapore", "location":"Singapore, Singapore", "mealType":"Room only", "roomType":"Double delux", "rating":5, "pricePerNight":27182, "previewImg":"assets/data/hotels/1/preview.jpg"},
+    {"id":"2", "name":"Bay hotel Singapore", "location":"Singapore, Singapore", "mealType":"Room only", "roomType":"Double standard", "rating":5, "pricePerNight":15108, "previewImg":"assets/data/hotels/2/preview.jpg"},
+    {"id":"3", "name":"Hotel Royal Singapore", "location":"Singapore, Singapore", "mealType":"Room only", "roomType":"Double delux", "rating":5, "pricePerNight":11619, "previewImg":"assets/data/hotels/3/preview.jpg"}
+]

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { Hotel } from '../models/hotel';
 
 @Injectable()
-export class HotelServiceService {
+export class HotelService {
 
   constructor(private http: Http) { }
 

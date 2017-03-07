@@ -15,4 +15,11 @@
         </div>
     </div>
 
+   <div *ngIf="hotels">
+       <hotel-short-detail *ngFor="let hotel of hotels">
+        
+    </hotel-short-detail>  
+</div>  
+
+
 </div>

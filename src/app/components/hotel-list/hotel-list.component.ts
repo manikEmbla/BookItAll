@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HotelService } from '../../services/hotel.service';
+import { Hotel } from '../../models/hotel';
 
 @Component({
   selector: 'hotel-list',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private hotelService: HotelService) { }
 
   myInterval: number = 5000;
 	index: number = 0;
@@ -19,10 +21,18 @@ export class HotelListComponent implements OnInit {
 		`assets/img/slider0.jpg`
 	];
 
+	hotels: Hotel[];
+
   ngOnInit() {
     for (let i = 0; i < 4; i++) {
 			this.addSlide();
 		}
+
+		this.hotelService.getHotels().subscribe(
+			hotels => {
+				this.hotels = hotels;
+			}
+		);
   }
 
 /* Carousel */
