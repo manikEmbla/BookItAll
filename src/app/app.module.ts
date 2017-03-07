@@ -11,7 +11,6 @@ import { routing } from './app.routes';
 import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CarouselModule, DropdownModule, AlertModule } from 'ng2-bootstrap';
-import { HotelShortListComponent } from './components/hotel-short-list/hotel-short-list.component';
 import {HotelService  } from './services/hotel.service';
 import { HotelShortDetailComponent } from './components/hotel-short-detail/hotel-short-detail.component';
 
@@ -22,7 +21,6 @@ import { HotelShortDetailComponent } from './components/hotel-short-detail/hotel
     TopnavComponent,
     HotelListComponent,
     SidebarComponent,
-    HotelShortListComponent,
     HotelShortDetailComponent
   ],
   imports: [
