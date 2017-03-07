@@ -16,7 +16,7 @@
     </div>
 
    <div *ngIf="hotels">
-       <hotel-short-detail *ngFor="let hotel of hotels">
+       <hotel-short-detail *ngFor="let hotel of hotels" [hotel]="hotel">
         
     </hotel-short-detail>  
 </div>  
