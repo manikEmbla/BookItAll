@@ -11,13 +11,15 @@ import { routing } from './app.routes';
 import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CarouselModule, DropdownModule, AlertModule } from 'ng2-bootstrap';
+import { HotelShortListComponent } from './components/hotel-short-list/hotel-short-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopnavComponent,
     HotelListComponent,
-    SidebarComponent
+    SidebarComponent,
+    HotelShortListComponent
   ],
   imports: [
     BrowserModule,
