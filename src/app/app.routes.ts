@@ -9,7 +9,11 @@ const appRoutes: Routes = [
       path: 'hotels',
       component: HotelListComponent
      },
-    
+    {
+      path: "",
+      redirectTo:'/hotels',
+      pathMatch: 'full'
+     }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

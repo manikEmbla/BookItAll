@@ -3,11 +3,14 @@
 </button>
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
     <ul class="list-group">
-        <a routerLink="/dashboard/home" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-dashboard"></i> Dashboard
+        <a routerLink="/hotels" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-hotel"></i> Hotels
         </a>
-        <a [routerLink]="['chart']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-bar-chart-o"></i> Charts
+        <a routerLink="/flights" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-plane"></i> Flights
+        </a>
+        <!--<a [routerLink]="['chart']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i> Flights
         </a>
         <a [routerLink]="['tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-table"></i> Tables
@@ -44,6 +47,6 @@
         </a>
         <a class="list-group-item more-themes" href="http://www.strapui.com/" >
             More Themes
-        </a>
+        </a>-->
     </ul>
 </nav>
