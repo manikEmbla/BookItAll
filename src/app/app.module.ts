@@ -13,6 +13,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CarouselModule, DropdownModule, AlertModule } from 'ng2-bootstrap';
 import {HotelService  } from './services/hotel.service';
 import { HotelShortDetailComponent } from './components/hotel-short-detail/hotel-short-detail.component';
+import { SlideShowComponent } from './shared/slide-show/slide-show.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HotelShortDetailComponent } from './components/hotel-short-detail/hotel
     TopnavComponent,
     HotelListComponent,
     SidebarComponent,
-    HotelShortDetailComponent
+    HotelShortDetailComponent,
+    SlideShowComponent
   ],
   imports: [
     BrowserModule,
