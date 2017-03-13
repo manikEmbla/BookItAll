@@ -1,0 +1,53 @@
+<div class="row" *ngIf="hotel">
+    <div class="col-lg-12">
+    <div class="card card-default">
+    <div class="card-header">
+          <div class="row">
+            <div class="col-lg-7">
+                <h5 class="timeline-title">{{hotel.name}}</h5>
+                <i class="fa fa-star icon-small" *ngFor="let item of createNumberRange()"></i> 
+            </div>
+            <div class="col-lg-3">
+                <h5 class="timeline-title">LKR {{hotel.pricePerNight}} <i class="fa fa-flash orange-tick" aria-hidden="true"></i></h5> 
+                per night
+            </div>
+             <div class="col-lg-2">
+                <button class="btn btn-primary" type="button">Book Now</button>
+            </div>
+          </div>
+      </div>
+          
+        </div>
+        <!-- /.card -->
+    </div>
+
+    <div class="card-block">
+      <h4> Amenities and Services </h4>
+       <div class="row">
+        <div class="col-lg-4">
+            <i class="fa fa-check-circle-o orange-tick" aria-hidden="true"></i> <small>Wheelchair accessible</small> <br/>
+            <i class="fa fa-check-circle-o orange-tick" aria-hidden="true"></i> <small> Check-in hour </small>
+        </div>
+        <div class="col-lg-4">
+            <i class="fa fa-check-circle-o orange-tick" aria-hidden="true"></i> <small> American express </small> <br/>
+            <i class="fa fa-check-circle-o orange-tick" aria-hidden="true"></i> <small> Bathrobes </small>
+        </div>
+        <div class="col-lg-4">
+            <i class="fa fa-check-circle-o orange-tick" aria-hidden="true"></i> <small> Wake-up service </small> <br/>
+            <i class="fa fa-check-circle-o orange-tick" aria-hidden="true"></i> <small> Local and international calls </small>
+        </div>
+      </div>
+
+      <br/>
+
+      <h4> About </h4>
+      <p>
+        <small>
+          This upscale hotel boasts a prime setting in Singapore. The hotel is situated in close proximity to the main attractions and points of interest that this captivating city has to offer. Guests can enjoy ease of access to the iconic Orchard shopping area and Chinatown, as well as a number of entertainment venues, dining options and areas of historical and cultural significance. The ideal option for business and leisure travellers alike, this delightful hotel ensures that each and every traveller enjoys a relaxing stay. The guest rooms are beautifully appointed, featuring a relaxing ambience, functional space and modern amenities for the comfort and convenience of discerning travellers. The hotel affords guests a number of exemplary facilities, ensuring that each and every traveller experiences a memorable stay.
+        </small>
+      </p>
+
+  </div>
+
+
+</div>

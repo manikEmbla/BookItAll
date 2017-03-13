@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Hotel } from '../../models/hotel';
+import {HotelService  } from '../../services/hotel.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'hotel-short-detail',
@@ -8,11 +10,16 @@ import { Hotel } from '../../models/hotel';
 })
 export class HotelShortDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private hotelService: HotelService, private router: Router) { }
 
   @Input() hotel: Hotel;
 
   ngOnInit() {
+  }
+
+  viewHotel(){
+    this.hotelService.selectedHotel = this.hotel;
+    this.router.navigate(['/hotel-details']);
   }
 
 }

@@ -8,6 +8,8 @@ export class HotelService {
 
   constructor(private http: Http) { }
 
+  public selectedHotel: Hotel;
+
   getHotels():Observable<Hotel[]>{
     return this.http.get('assets/data/hotels.json').map(res => res.json());
   }

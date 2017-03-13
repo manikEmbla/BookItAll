@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-slide-show',
+  selector: 'slide-show',
   templateUrl: './slide-show.component.html',
   styleUrls: ['./slide-show.component.css']
 })
@@ -9,9 +9,16 @@ export class SlideShowComponent implements OnInit {
 
   constructor() { }
 
+  	imgUrl: Array<any> = [
+		`assets/img/slider1.jpg`,
+		`assets/img/slider2.jpg`,
+		`assets/img/slider3.jpg`,
+		`assets/img/slider0.jpg`
+	];
+
   myInterval: number = 1000;
 	index: number = 0;
-	@Input() images: Array<string> = [];
+  slides:Array<any>=[];
 
   ngOnInit() {
     for (let i = 0; i < 4; i++) {
@@ -31,10 +38,4 @@ export class SlideShowComponent implements OnInit {
 	}
 	/* END */
 
-}
-
-export class Slide{
-  image:string;
-  title:string;
-  description:string;
 }

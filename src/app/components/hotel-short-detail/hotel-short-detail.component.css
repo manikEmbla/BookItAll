@@ -5,3 +5,7 @@
 .detail{
     height: 200px;
 }
+
+.clickable{
+    cursor: pointer;
+}

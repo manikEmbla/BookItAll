@@ -14,6 +14,7 @@ import { CarouselModule, DropdownModule, AlertModule } from 'ng2-bootstrap';
 import {HotelService  } from './services/hotel.service';
 import { HotelShortDetailComponent } from './components/hotel-short-detail/hotel-short-detail.component';
 import { SlideShowComponent } from './shared/slide-show/slide-show.component';
+import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SlideShowComponent } from './shared/slide-show/slide-show.component';
     HotelListComponent,
     SidebarComponent,
     HotelShortDetailComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    HotelDetailsComponent
   ],
   imports: [
     BrowserModule,
