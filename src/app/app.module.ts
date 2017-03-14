@@ -15,6 +15,11 @@ import {HotelService  } from './services/hotel.service';
 import { HotelShortDetailComponent } from './components/hotel-short-detail/hotel-short-detail.component';
 import { SlideShowComponent } from './shared/slide-show/slide-show.component';
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
+import { FlightsComponent } from './components/flights/flights.component';
+import { FlightShortDetailComponent } from './components/flight-short-detail/flight-short-detail.component';
+import { FlightDetailsComponent } from './components/flight-details/flight-details.component';
+import { GiftsComponent } from './components/gifts/gifts.component';
+import { TaxisComponent } from './components/taxis/taxis.component';
 
 
 @NgModule({
@@ -25,7 +30,12 @@ import { HotelDetailsComponent } from './components/hotel-details/hotel-details.
     SidebarComponent,
     HotelShortDetailComponent,
     SlideShowComponent,
-    HotelDetailsComponent
+    HotelDetailsComponent,
+    FlightsComponent,
+    FlightShortDetailComponent,
+    FlightDetailsComponent,
+    GiftsComponent,
+    TaxisComponent
   ],
   imports: [
     BrowserModule,
