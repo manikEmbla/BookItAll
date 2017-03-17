@@ -1,12 +1,11 @@
-import { ModuleWithProviders }  from '@angular/core';
+import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 
-const appRoutes: Routes = [
-     
-    {
+export const routes: Routes = [
+  {
       path: 'hotels',
       component: HotelListComponent
      },
@@ -21,4 +20,8 @@ const appRoutes: Routes = [
      }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

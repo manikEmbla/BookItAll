@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './shared/topnav/topnav.component';
-import { routing } from './app.routes';
+import { AppRoutingModule } from './app.routing.module';
 import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CarouselModule, DropdownModule, AlertModule } from 'ng2-bootstrap';
@@ -41,8 +41,8 @@ import { TaxisComponent } from './components/taxis/taxis.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
-    CarouselModule
+    CarouselModule,
+    AppRoutingModule
   ],
   providers: [HotelService],
   bootstrap: [AppComponent]
