@@ -20,6 +20,11 @@ import { FlightShortDetailComponent } from './components/flight-short-detail/fli
 import { FlightDetailsComponent } from './components/flight-details/flight-details.component';
 import { GiftsComponent } from './components/gifts/gifts.component';
 import { TaxisComponent } from './components/taxis/taxis.component';
+import { TaxiDetailsComponent } from './components/taxi-details/taxi-details.component';
+import { TaxiListComponent } from './components/taxi-list/taxi-list.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -35,7 +40,12 @@ import { TaxisComponent } from './components/taxis/taxis.component';
     FlightShortDetailComponent,
     FlightDetailsComponent,
     GiftsComponent,
-    TaxisComponent
+    TaxisComponent,
+    TaxiDetailsComponent,
+    TaxiListComponent,
+    ContactComponent,
+    HomeComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
